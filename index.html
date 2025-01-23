@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+
+	<style>
+		.mainDiv {
+			width: 400px;
+			height: auto;
+			background: black;
+			padding: 20px;
+			margin: auto;
+			border-radius: 12px;
+		}
+		input#display {
+			width: 89%;
+			height: 50px;
+			border-radius: 6px;
+			background: #fff;
+			padding: 2px 20px;
+			font-size: 33px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		button.number, button.operator, button#clear, button#equals {
+			width: 96px;
+			height: 96px;
+			font-size: 33px;
+			margin: 5px 0px;
+			border-radius: 5px;
+			background: #505050;
+			color: #fff;
+			cursor: pointer;
+			border: none;
+		}
+		button.operator {
+			background-color: #F79A0A;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="mainDiv">
+		<div class="screen">
+			<input id="display" type="text" disabled placeholder="0">
+		</div>
+		
+		<!-- Calculator Buttons -->
+		<div class="buttonsDiv">
+			<div>
+				<button class="number">7</button>
+				<button class="number">8</button>
+				<button class="number">9</button>
+				<button class="operator">/</button>
+			  </div>
+			  <div>
+				<button class="number">4</button>
+				<button class="number">5</button>
+				<button class="number">6</button>
+				<button class="operator">*</button>
+			  </div>
+			  <div>
+				<button class="number">1</button>
+				<button class="number">2</button>
+				<button class="number">3</button>
+				<button class="operator">-</button>
+			  </div>
+			  <div>
+				<button class="number">0</button>
+				<button id="clear">C</button>
+				<button id="equals">=</button>
+				<button class="operator">+</button>
+			  </div>
+		</div>
+	  </div>
+	  
+	<script src="calc.js"></script>
+</body>
+</html>
