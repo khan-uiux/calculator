@@ -6,23 +6,28 @@
 	<title>Calculator</title>
 
 	<style>
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
 		.mainDiv {
 			width: 400px;
 			height: auto;
-			background: black;
+			background: #ffffff;
 			padding: 20px;
 			margin: auto;
 			border-radius: 12px;
 		}
 		input#display {
 			width: 89%;
-			height: 50px;
+			height: 80px;
 			border-radius: 6px;
 			background: #fff;
 			padding: 2px 20px;
 			font-size: 33px;
 			font-weight: bold;
 			margin-bottom: 5px;
+			border: 2px solid #d5d5d5;
 		}
 		button.number, button.operator, button#clear, button#equals {
 			width: 96px;
@@ -35,14 +40,31 @@
 			cursor: pointer;
 			border: none;
 		}
+		button.number:hover {
+			background-color : #4b4b4b;
+		}
 		button.operator {
 			background-color: #F79A0A;
+		}
+		button.operator:hover {
+			background-color: #e48b06;
 		}
 		.mainContainer {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			height: 100vh;
+			background-color: #616161;
+		}
+		
+		@media screen and (max-width: 768px) {
+			input#display {
+				width: 85%;
+			}
+			button.number, button.operator, button#clear, button#equals {
+				width: 79px;
+				height: 79px;
+			}
 		}
 	</style>
 </head>

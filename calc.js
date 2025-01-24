@@ -11,14 +11,12 @@ let currentInput = "";
 let Expression = "";
 
 
-// button clicks
-
 numbers.forEach(button => {
     button.addEventListener('click', function() {
-        currentInput += button.textContent;
+        currentInput += button.textContent
 
-        display.value = currentInput; 
-    });
+        display.value = currentInput
+    })
 });
 
 operator.forEach(button => {
